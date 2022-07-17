@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+ul,li,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*** header start **/
+.header{
+    background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)),url("arkaplan.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.header-top{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 50px; 
+}
+.header-top-menu ul li{
+    display: inline-block; /*satırları yan yana getirir*/
+    
+
+}
+.header-top-menu ul li a{
+    display: block;
+    color:#fff;
+    padding: 15px 20px;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    transition: 300ms all;
+    font-weight: 1000;
+}
+.header-top-logo img{
+    max-width: 100px;
+}
+
+.header-top-menu ul li a:hover{
+    color: aquamarine;
+}
+/*content*/
+.header-content{
+    display: flex;/*kemal şen web developer kısmını ortalar*/
+    justify-content: center;
+    align-items: center;
+}
+.header-content-heading{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content-heading h1{
+    font-size: 68px;
+    letter-spacing: 0.05rem;
+}
+.header-content-heading p{
+    letter-spacing: 0.05rem;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.header-content-heading a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 300ms;
+    color: #000;
+    backface-visibility: hidden;
+}
+.header-content-heading a:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.500);
+}
